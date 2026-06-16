@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title Order Form | Tropic Title Services</title>
+  <meta name="description" content="Submit a title order with Tropic Title Services. Serving Citrus and Hernando County, Florida with professional real estate closing services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M8 12h16M8 16h12M8 20h14" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <div class="nav__logo-text">
+          <span class="nav__logo-name">Tropic Title</span>
+          <span class="nav__logo-sub">Services</span>
+        </div>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="team.html" class="nav__link">Meet the Team</a></li>
+        <li><a href="services.html" class="nav__link">Why Choose Us?</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+        <li><a href="order.html" class="nav__link active">Title Order Form</a></li>
+        <li><a href="contact.html#quote" class="nav__cta">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Start Your Transaction</p>
+      <h1 class="page-hero__title">Title Order Form</h1>
+      <p class="page-hero__subtitle">Fill out the form below to submit your title order. Our team will follow up promptly.</p>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="order-section">
+    <div class="container">
+      <form class="order-form reveal" id="orderForm">
+
+        <!-- Section 1: Transaction Details -->
+        <div class="order-form__section">
+          <h3 class="order-form__section-title">
+            <span class="order-form__section-number">1</span>
+            Transaction Details
+          </h3>
+          <div class="form__group">
+            <label class="form__label">Transaction Type</label>
+            <div class="form__radio-group">
+              <label class="form__radio-label"><input type="radio" name="transactionType" value="purchase" checked> Purchase with Financing</label>
+              <label class="form__radio-label"><input type="radio" name="transactionType" value="cash"> Cash</label>
+              <label class="form__radio-label"><input type="radio" name="transactionType" value="refinancing"> Refinancing</label>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label">For Sale By Owner?</label>
+              <div class="form__radio-group">
+                <label class="form__radio-label"><input type="radio" name="fsbo" value="no" checked> No</label>
+                <label class="form__radio-label"><input type="radio" name="fsbo" value="yes"> Yes</label>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Short Sale?</label>
+              <div class="form__radio-group">
+                <label class="form__radio-label"><input type="radio" name="shortSale" value="no" checked> No</label>
+                <label class="form__radio-label"><input type="radio" name="shortSale" value="yes"> Yes</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Your Info -->
+        <div class="order-form__section">
+          <h3 class="order-form__section-title">
+            <span class="order-form__section-number">2</span>
+            Tell Us Who You Are
+          </h3>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="yourFirstName">First Name *</label>
+              <input class="form__input" type="text" id="yourFirstName" name="yourFirstName" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="yourLastName">Last Name *</label>
+              <input class="form__input" type="text" id="yourLastName" name="yourLastName" required>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="yourEmail">Email Address *</label>
+              <input class="form__input" type="email" id="yourEmail" name="yourEmail" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="yourPhone">Phone Number *</label>
+              <input class="form__input" type="tel" id="yourPhone" name="yourPhone" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Property Info -->
+        <div class="order-form__section">
+          <h3 class="order-form__section-title">
+            <span class="order-form__section-number">3</span>
+            Property Information
+          </h3>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="salesPrice">Sales Price *</label>
+              <input class="form__input" type="text" id="salesPrice" name="salesPrice" required placeholder="$">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="closingDate">Closing Date</label>
+              <input class="form__input" type="date" id="closingDate" name="closingDate">
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="propAddress">Address *</label>
+            <input class="form__input" type="text" id="propAddress" name="propAddress" required>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="propCity">City *</label>
+              <input class="form__input" type="text" id="propCity" name="propCity" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="propZip">ZIP Code *</label>
+              <input class="form__input" type="text" id="propZip" name="propZip" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="hoa">HOA (if any)</label>
+            <input class="form__input" type="text" id="hoa" name="hoa">
+          </div>
+        </div>
+
+        <!-- Section 4: Seller -->
+        <div class="order-form__section">
+          <h3 class="order-form__section-title">
+            <span class="order-form__section-number">4</span>
+            The Seller
+          </h3>
+          <div class="form__group">
+            <label class="form__label">Is the seller an individual or company?</label>
+            <div class="form__radio-group">
+              <label class="form__radio-label"><input type="radio" name="sellerType" value="individual" checked> Individual</label>
+              <label class="form__radio-label"><input type="radio" name="sellerType" value="company"> Company</label>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="sellerFirst">Seller First Name</label>
+              <input class="form__input" type="text" id="sellerFirst" name="sellerFirst">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="sellerLast">Seller Last Name</label>
+              <input class="form__input" type="text" id="sellerLast" name="sellerLast">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="sellerMarital">Marital Status</label>
+              <select class="form__select" id="sellerMarital" name="sellerMarital">
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="sellerLoan">Seller's Loan With</label>
+              <input class="form__input" type="text" id="sellerLoan" name="sellerLoan" placeholder="BOA, Chase, Wells Fargo, etc">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="sellerEmail">Email</label>
+              <input class="form__input" type="email" id="sellerEmail" name="sellerEmail">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="sellerPhone">Phone</label>
+              <input class="form__input" type="tel" id="sellerPhone" name="sellerPhone">
+            </div>
+          </div>
+
+          <!-- Seller's Agent -->
+          <h4 style="font-size:var(--text-base); font-weight:600; color:var(--color-text-heading); margin:var(--space-xl) 0 var(--space-md); padding-top:var(--space-lg); border-top:1px solid var(--color-gray-100);">Seller's Agent</h4>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="sellerAgentFirst">First Name</label>
+              <input class="form__input" type="text" id="sellerAgentFirst" name="sellerAgentFirst">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="sellerAgentLast">Last Name</label>
+              <input class="form__input" type="text" id="sellerAgentLast" name="sellerAgentLast">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="sellerAgentPhone">Phone Number</label>
+              <input class="form__input" type="tel" id="sellerAgentPhone" name="sellerAgentPhone">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="sellerAgentEmail">Email Address</label>
+              <input class="form__input" type="email" id="sellerAgentEmail" name="sellerAgentEmail">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="sellerAgentCompany">Company</label>
+              <input class="form__input" type="text" id="sellerAgentCompany" name="sellerAgentCompany">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="sellerAgentComp">Compensation Amount</label>
+              <input class="form__input" type="text" id="sellerAgentComp" name="sellerAgentComp">
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="sellerMLSComp">MLS / Broker Additional Compensation</label>
+            <input class="form__input" type="text" id="sellerMLSComp" name="sellerMLSComp">
+          </div>
+        </div>
+
+        <!-- Section 5: Buyer -->
+        <div class="order-form__section">
+          <h3 class="order-form__section-title">
+            <span class="order-form__section-number">5</span>
+            The Buyer
+          </h3>
+          <div class="form__group">
+            <label class="form__label">Is the buyer an individual or company?</label>
+            <div class="form__radio-group">
+              <label class="form__radio-label"><input type="radio" name="buyerType" value="individual" checked> Individual</label>
+              <label class="form__radio-label"><input type="radio" name="buyerType" value="company"> Company</label>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="buyerFirst">Buyer First Name</label>
+              <input class="form__input" type="text" id="buyerFirst" name="buyerFirst">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="buyerLast">Buyer Last Name</label>
+              <input class="form__input" type="text" id="buyerLast" name="buyerLast">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="buyerMarital">Marital Status</label>
+              <select class="form__select" id="buyerMarital" name="buyerMarital">
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="buyerLoan">Buyer's Loan With</label>
+              <input class="form__input" type="text" id="buyerLoan" name="buyerLoan" placeholder="BOA, Chase, Wells Fargo, etc">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="buyerEmail">Email</label>
+              <input class="form__input" type="email" id="buyerEmail" name="buyerEmail">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="buyerPhone">Phone</label>
+              <input class="form__input" type="tel" id="buyerPhone" name="buyerPhone">
+            </div>
+          </div>
+
+          <!-- Buyer's Agent -->
+          <h4 style="font-size:var(--text-base); font-weight:600; color:var(--color-text-heading); margin:var(--space-xl) 0 var(--space-md); padding-top:var(--space-lg); border-top:1px solid var(--color-gray-100);">Buyer's Agent</h4>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="buyerAgentFirst">First Name</label>
+              <input class="form__input" type="text" id="buyerAgentFirst" name="buyerAgentFirst">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="buyerAgentLast">Last Name</label>
+              <input class="form__input" type="text" id="buyerAgentLast" name="buyerAgentLast">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="buyerAgentPhone">Phone Number</label>
+              <input class="form__input" type="tel" id="buyerAgentPhone" name="buyerAgentPhone">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="buyerAgentEmail">Email</label>
+              <input class="form__input" type="email" id="buyerAgentEmail" name="buyerAgentEmail">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="buyerAgentCompany">Company</label>
+              <input class="form__input" type="text" id="buyerAgentCompany" name="buyerAgentCompany">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="buyerAgentComp">Compensation Amount</label>
+              <input class="form__input" type="text" id="buyerAgentComp" name="buyerAgentComp">
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="buyerMLSComp">MLS / Broker Additional Compensation</label>
+            <input class="form__input" type="text" id="buyerMLSComp" name="buyerMLSComp">
+          </div>
+        </div>
+
+        <!-- Section 6: Other Details -->
+        <div class="order-form__section">
+          <h3 class="order-form__section-title">
+            <span class="order-form__section-number">6</span>
+            Other Details
+          </h3>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="escrowAmount">Escrow Amount</label>
+              <input class="form__input" type="text" id="escrowAmount" name="escrowAmount" placeholder="$">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="escrowHeldBy">Escrow Held By</label>
+              <input class="form__input" type="text" id="escrowHeldBy" name="escrowHeldBy">
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="otherDetails">Other Specific Details</label>
+            <textarea class="form__textarea" id="otherDetails" name="otherDetails" placeholder="POA, requires Survey, mail-away closing, etc."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="form__submit">Send Order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <span class="nav__logo-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M8 12h16M8 16h12M8 20h14" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div class="nav__logo-text">
+              <span class="nav__logo-name">Tropic Title</span>
+              <span class="nav__logo-sub">Services</span>
+            </div>
+          </a>
+          <p class="footer__tagline">Florida's trusted family-owned title company since 2005.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Meet the Team</a></li>
+            <li><a href="services.html">Why Choose Us?</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="order.html">Title Order Form</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Title Search &amp; Examination</a></li>
+            <li><a href="services.html">Title Insurance</a></li>
+            <li><a href="services.html">Escrow Services</a></li>
+            <li><a href="services.html">Real Estate Closings</a></li>
+            <li><a href="services.html">Lien Resolution</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Get In Touch</h4>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <a href="tel:352-503-4780">(352) 503-4780</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <a href="mailto:CarolineGerber@tropictitleservices.com">CarolineGerber@tropictitleservices.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Citrus &amp; Hernando County, FL</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear"></span> Tropic Title Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
